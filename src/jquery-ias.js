@@ -418,7 +418,7 @@
       return;
     }
 
-    this.$scrollContainer.on('scroll', $.proxy(this.throttle(this.scrollHandler, 150), this));
+    this.$scrollContainer.on('scroll', $.proxy(this.throttle(this.scrollHandler, 500), this));
 
     for (var i = 0, l = this.extensions.length; i < l; i++) {
       this.extensions[i].bind(this);
